@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0c0c0c;
     display: flex;
 }
 
@@ -42,13 +42,14 @@ section {
 
 #home {
     background: url('background.jpg') no-repeat center center/cover;
-    color: white;
+    color: rgb(99, 22, 22);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 
 .btn {
     display: inline-block;
@@ -64,3 +65,4 @@ section {
 .btn:hover {
     background-color: #c13e1d;
 }
+
