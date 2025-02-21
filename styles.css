@@ -66,3 +66,9 @@ section {
     background-color: #c13e1d;
 }
 
+.profile-pic{
+    height: auto;
+    margin-right: 20px;
+    width: 400px;  
+}
+
