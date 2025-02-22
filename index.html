@@ -6,20 +6,13 @@
   <title>Tareq's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/lucide-icons@0.19.0/dist/lucide-icons.css" rel="stylesheet">
-  <style>
-    .animate-wave {
-      animation: wave 1.5s ease-in-out infinite;
-    }
-    @keyframes wave {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(15deg); }
-    }
-  </style>
+  <link href="styles.css" rel="stylesheet"> <!-- Link to CSS -->
+  <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
 </head>
 <body class="min-h-screen bg-black text-white">
 
-      <!-- Header Section with Image -->
-  <header class="w-full h-64">
+  <!-- Header Section with Image -->
+  <header class="w-full h-128 sm:h-144 md:h-160 lg:h-192">
     <img 
       src="./src/header.jpg" 
       alt="Header Image"
@@ -33,7 +26,7 @@
       <img 
         src="./src/myPic.jpg"
         alt="Profile" 
-        class="w-12 h-12 rounded-full object-cover"
+        class="w-20 h-20 rounded-full object-cover object-top"
       />
       <button class="bg-white text-black px-4 py-2 rounded-full font-medium">
         CONTACT ME
@@ -45,13 +38,13 @@
   <main class="pt-32 pb-20">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center mb-20">
-        <h1 class="text-6xl font-bold mb-4">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
           Hello <span class="inline-block animate-wave">👋</span>
         </h1>
-        <h2 class="text-4xl mb-4">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl mb-4">
           I'm <span class="text-yellow-500">Tareq</span>, a <span class="italic">full-stack developer</span>
         </h2>
-        <p class="text-2xl text-gray-400">
+        <p class="text-xl sm:text-2xl text-gray-400">
           based in Sweden.
         </p>
       </div>
@@ -68,7 +61,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- Project Cards -->
           <div class="relative group overflow-hidden rounded-lg aspect-video bg-gray-800">
             <img 
@@ -94,7 +87,6 @@
               </button>
             </div>
           </div>
-          <!-- Add more project cards as needed -->
         </div>
       </section>
 
@@ -120,5 +112,6 @@
     </a>
   </div>
 
+  <script src="script.js"></script> <!-- Link to JavaScript -->
 </body>
 </html>

@@ -1,0 +1,25 @@
+/* Tailwind customization or additional styles */
+
+/* Animation for wave effect */
+.animate-wave {
+    animation: wave 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+  }
+  
+  /* Custom Styles for Portfolio */
+  button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
