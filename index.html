@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tareq Nassrallah - Portfolio</title>
-    <link rel="stylesheet" href="./src/styles.css">
-    <link rel="icon" type="image/png" href="./src/fav.ico">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tareq's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lucide-icons@0.19.0/dist/lucide-icons.css" rel="stylesheet">
+  <style>
+    .animate-wave {
+      animation: wave 1.5s ease-in-out infinite;
+    }
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+    }
+  </style>
 </head>
-<body>
+<body class="min-h-screen bg-black text-white">
 
-    
-    <section id="home" class="section">
-        <div class="home-content">
-            <img src="./src/myPic.jpg" alt="Tareq Nassrallah" class="profile-pic">
-            <h1>Tareq Nassrallah</h1>
-            <p>Junior Software Engineer | Passionate about Web Development& AI</p>
-            <a href="#about" class="btn">Learn More</a>
+      <!-- Header Section with Image -->
+  <header class="w-full h-64">
+    <img 
+      src="./src/header.jpg" 
+      alt="Header Image"
+      class="w-full h-full object-cover"
+    />
+  </header>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 p-4 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <img 
+        src="./src/myPic.jpg"
+        alt="Profile" 
+        class="w-12 h-12 rounded-full object-cover"
+      />
+      <button class="bg-white text-black px-4 py-2 rounded-full font-medium">
+        CONTACT ME
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-20">
+        <h1 class="text-6xl font-bold mb-4">
+          Hello <span class="inline-block animate-wave">👋</span>
+        </h1>
+        <h2 class="text-4xl mb-4">
+          I'm <span class="text-yellow-500">Tareq</span>, a <span class="italic">full-stack developer</span>
+        </h2>
+        <p class="text-2xl text-gray-400">
+          based in Sweden.
+        </p>
+      </div>
+
+      <!-- Portfolio Section -->
+      <section>
+        <div class="flex items-center justify-between mb-8">
+          <h3 class="text-2xl font-bold">My Work</h3>
+          <div class="flex gap-4">
+            <button class="text-gray-400 hover:text-white">ALL</button>
+            <button class="text-gray-400 hover:text-white">FRONT END</button>
+            <button class="text-gray-400 hover:text-white">BACK END</button>
+            <button class="text-gray-400 hover:text-white">FULL STACK</button>
+          </div>
         </div>
-    </section>
-    
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Project Cards -->
+          <div class="relative group overflow-hidden rounded-lg aspect-video bg-gray-800">
+            <img 
+              src="https://source.unsplash.com/random/800x600?tech&1"
+              alt="Project 1"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <button class="bg-white text-black px-6 py-2 rounded-full font-medium transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="relative group overflow-hidden rounded-lg aspect-video bg-gray-800">
+            <img 
+              src="https://source.unsplash.com/random/800x600?tech&2"
+              alt="Project 2"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <button class="bg-white text-black px-6 py-2 rounded-full font-medium transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                View Project
+              </button>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+
+      <!-- Download CV Button -->
+      <div class="text-center mt-20">
+        <button class="bg-white text-black px-8 py-3 rounded-full font-medium">
+          DOWNLOAD CV
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Social Links -->
+  <div class="fixed right-4 bottom-4 flex flex-col gap-4">
+    <a href="https://linkedin.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
+      <i class="lucide lucide-linkedin w-6 h-6"></i>
+    </a>
+    <a href="https://github.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
+      <i class="lucide lucide-github w-6 h-6"></i>
+    </a>
+    <a href="mailto:example@email.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
+      <i class="lucide lucide-mail w-6 h-6"></i>
+    </a>
+  </div>
+
 </body>
 </html>
