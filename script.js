@@ -1,5 +1,4 @@
 // Add any JavaScript functionalities if necessary
-// For example, handling the "CONTACT ME" button click or project actions
   
 
   document.addEventListener('DOMContentLoaded', function () {
