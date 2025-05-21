@@ -35,12 +35,12 @@
   </nav>
 
   <!-- Contact Modal -->
-<div id="contactModal" classname="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 animate-fadeIn">
-  <div classname="bg-white rounded-2xl shadow-lg p-6 max-w-md w-full text-black animate-slideUp">
-        <h2 classname="text-2xl font-semibold mb-4">Contact Me</h2>
-        <p classname="mb-2"><strong>City:</strong> Växjö, Sweden</p>
-        <p classname="mb-2"><strong>Email:</strong> <a href="mailto:tareqn.nassrallah@gmail.com" classname="text-blue-600 hover:underline">tareqn.nassrallah@gmail.com</a></p>
-    <button onclick="document.getElementById('contactModal').classList.add('hidden')" class="mt-4 bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300">Close</button>
+<div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-2xl shadow-lg p-6 max-w-md w-full">
+    <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+    <p class="mb-2"><strong>City:</strong> Växjö, Sweden</p>
+    <p class="mb-2"><strong>Email:</strong> <a href="mailto:tareqn.nassrallah@gmail.com" class="text-blue-600 hover:underline">tareqn.nassrallah@gmail.com</a></p>
+    <button onclick="document.getElementById('contactModal').classList.add('hidden')" class="mt-4 bg-black text-white px-4 py-2 rounded-full">Close</button>
   </div>
 </div>
 
@@ -100,15 +100,15 @@
         </div>
       </section>
 
-
-<!-- Show CV Button -->
+      <!-- Download CV Button -->
+<!-- Download CV Button -->
 <div class="text-center mt-20">
   <a 
     href="./CV - IT Tareq Nassrallah.pdf" 
     target="_blank"
     class="bg-white text-black px-8 py-3 rounded-full font-medium"
   >
-    SHOW CV
+    DOWNLOAD CV
   </a>
 </div>
 
@@ -117,13 +117,13 @@
 
   <!-- Social Links -->
   <div class="fixed right-4 bottom-4 flex flex-col gap-4">
-    <a href="https://www.linkedin.com/in/tareq-nassrallah-721559153/" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
+    <a href="https://linkedin.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
       <i class="lucide lucide-linkedin w-6 h-6"></i>
     </a>
-    <a href="https://github.com/tareqnidal" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
+    <a href="https://github.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
       <i class="lucide lucide-github w-6 h-6"></i>
     </a>
-    <a href="mailto:tareqn.nassrallah@gmail.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
+    <a href="mailto:example@email.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
       <i class="lucide lucide-mail w-6 h-6"></i>
     </a>
   </div>
