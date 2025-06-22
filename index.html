@@ -1,133 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tareq's Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/lucide-icons@0.19.0/dist/lucide-icons.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet"> <!-- Link to CSS -->
-  <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
-</head>
-<body class="min-h-screen bg-black text-white">
-
-  <!-- Header Section with Image -->
-  <header class="w-full h-128 sm:h-144 md:h-160 lg:h-192">
-    <img 
-      src="./src/header.jpg" 
-      alt="Header Image"
-      class="w-full h-full object-cover"
-    />
-  </header>
-
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 p-4 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <img 
-        src="./src/myPic.jpg"
-        alt="Profile" 
-        class="w-20 h-20 rounded-full object-cover object-top"
-      />
-      <button class="bg-white text-black px-4 py-2 rounded-full font-medium">
-        CONTACT ME
-      </button>
-    </div>
-  </nav>
-
-  <!-- Contact Modal -->
-<div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-  <div class="bg-white rounded-2xl shadow-lg p-6 max-w-md w-full">
-    <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
-    <p class="mb-2"><strong>City:</strong> Växjö, Sweden</p>
-    <p class="mb-2"><strong>Email:</strong> <a href="mailto:tareqn.nassrallah@gmail.com" class="text-blue-600 hover:underline">tareqn.nassrallah@gmail.com</a></p>
-    <button onclick="document.getElementById('contactModal').classList.add('hidden')" class="mt-4 bg-black text-white px-4 py-2 rounded-full">Close</button>
-  </div>
-</div>
-
-
-  <!-- Hero Section -->
-  <main class="pt-32 pb-20">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-20">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-          Hello <span class="inline-block animate-wave">👋</span>
-        </h1>
-        <h2 class="text-3xl sm:text-4xl md:text-5xl mb-4">
-          I'm <span class="text-yellow-500">Tareq</span>, a <span class="italic">Software Engineer</span>
-        </h2>
-        <p class="text-xl sm:text-2xl text-gray-400">
-          based in Sweden.
-        </p>
-      </div>
-
-      <!-- Portfolio Section -->
-      <section>
-        <div class="flex items-center justify-between mb-8">
-          <h3 class="text-2xl font-bold">My Work</h3>
-          <div class="flex gap-4">
-            <button class="text-gray-400 hover:text-white">ALL</button>
-            <button class="text-gray-400 hover:text-white">FRONT END</button>
-            <button class="text-gray-400 hover:text-white">BACK END</button>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <!-- Project Cards -->
-          <div class="relative group overflow-hidden rounded-lg aspect-video bg-gray-800">
-            <img 
-              src="https://source.unsplash.com/random/800x600?tech&1"
-              alt="Project 1"
-              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <button class="bg-white text-black px-6 py-2 rounded-full font-medium transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                View Project
-              </button>
-            </div>
-          </div>
-          <div class="relative group overflow-hidden rounded-lg aspect-video bg-gray-800">
-            <img 
-              src="https://source.unsplash.com/random/800x600?tech&2"
-              alt="Project 2"
-              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <button class="bg-white text-black px-6 py-2 rounded-full font-medium transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                View Project
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Download CV Button -->
-<!-- Download CV Button -->
-<div class="text-center mt-20">
-  <a 
-    href="./CV - IT Tareq Nassrallah.pdf" 
-    target="_blank"
-    class="bg-white text-black px-8 py-3 rounded-full font-medium"
-  >
-    DOWNLOAD CV
-  </a>
-</div>
-
-    </div>
-  </main>
-
-  <!-- Social Links -->
-  <div class="fixed right-4 bottom-4 flex flex-col gap-4">
-    <a href="https://linkedin.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
-      <i class="lucide lucide-linkedin w-6 h-6"></i>
-    </a>
-    <a href="https://github.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
-      <i class="lucide lucide-github w-6 h-6"></i>
-    </a>
-    <a href="mailto:example@email.com" class="bg-gray-800 p-2 rounded-full hover:bg-gray-700">
-      <i class="lucide lucide-mail w-6 h-6"></i>
-    </a>
-  </div>
-
-  <script src="script.js"></script> <!-- Link to JavaScript -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tareq's Portfolio | Software Engineer</title>
+    <meta name="description" content="Portfolio of Tareq Nassrallah, a Software Engineer based in Sweden">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
