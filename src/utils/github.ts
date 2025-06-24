@@ -16,18 +16,16 @@ const getImageForLanguage = (language: string) => {
   return images[language as keyof typeof images] || images.default;
 };
 
-// Function to fetch GitHub repositories
 export const fetchGithubRepos = async (): Promise<ProjectType[]> => {
   const username = 'tareqnidal';
-  const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`);
-  
+  const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
+
   if (!response.ok) {
     throw new Error('Failed to fetch GitHub repositories');
   }
-  
+
   const repos = await response.json();
-  
-  // Transform the GitHub API response into our ProjectType format
+
   return repos.map((repo: any) => ({
     id: repo.id.toString(),
     name: repo.name,
